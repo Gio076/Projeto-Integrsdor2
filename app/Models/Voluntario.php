@@ -4,7 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Cliente extends Model
+class Voluntario extends Model
 {
     protected $fillable = [
         'id',
@@ -14,7 +14,9 @@ class Cliente extends Model
         'email',
         'instagram',
         'nascimento',
-        'acessibilidade',
+        'linkedin',
+        'curriculo',
+        'antepassados_criminais'
     ];
 
 }

@@ -10,11 +10,10 @@ class Cliente extends Model
         'id',
         'nome',
         'telefone',
-        'cpf',
-        'email',
+        'local',
+        'data',
         'instagram',
-        'nascimento',
-        'acessibilidade',
+        'responsavel',
     ];
 
 }

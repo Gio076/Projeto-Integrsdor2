@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pr-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos</title>
+</head>
+<body>
+
+    <a href="index.php">Início</a>
+
+    <h1>Sou Cliente</h1>
+
+    <div class="form_evento">
+    <form action="cadastroevento.php" method="post">
+        
+        <div class="nome"><input id="nome" type="text" name="Nome" placeholder="Nome do Evento"></div>
+
+         <div class="responsavel"><input id="responsavel" type="text" name="responsavel " placeholder="Nome do Organizador"></div>
+
+        <div class="telefone"><input id="telefone" type="number" name="Telefone" placeholder="Telefone" inputmode="numeric"></div>
+
+        <div class="local"><input id="local" type="text" name="Local" placeholder="Local"></div>
+
+        <div class="instagram"><input id="instagram" type="text" title="Data do Evento" name="Instagram" placeholder="Instagram(opcional)"></div>
+
+        <div class="data"><input id="data" type="data" name="nascimento" placeholder="dd/mm/aaaa"></div>
+
+        <div calss="acessibilidade">
+            <label for="acessibilidade">Por gentileza, informe as suas necessidades de acessibilidade </label>
+            <textarea name="acessibilidade" id="acessibilidade" rows="5" placeholder="Ex: preciso de intérprete de libras, acesso sem escadas, materiais em fonte ampliada, etc"></textarea></div>
+    </form>
+    </div>
+</body>
+
+</html>

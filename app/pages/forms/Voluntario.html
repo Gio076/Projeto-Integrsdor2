@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pr-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voluntário</title>
+</head>
+<body>
+
+    <a href="index.php">Início</a>
+
+    <h1>Sou Voluntário</h1>
+    <div class="form_voluntario">
+    <form action="cadastrovoluntario.php" method="post">
+        <div class="nome"><input id="nome" type="text" name="Nome" placeholder="Seu nome completo"></div>
+
+        <div class="telefone"><input id="telefone" type="number" name="Telefone" placeholder="Telefone" inputmode="numeric"></div>
+
+        <div class="cpf"><input id="cpf" type="text" name="CPF" placeholder="CPF" inputmode="numeric"></div>
+
+        <div class="linkedin"><input id="linkedin" type="text" name="linkedin" placeholder="Linkedin"></div>
+        
+        <div class="email"><input id="email" type="text" name="E-mail" placeholder="E-mail"></div>
+
+        <div class="instagram"><input id="instagram" type="text" name="Instagram" placeholder="Instagram(opcional)"></div>
+
+        <div class="nascimento"><input id="nascimento" type="date" name="nascimento" placeholder="dd/mm/aaaa"></div>
+
+        <div class="curriculo">
+            <textarea name="curriculo" id="curriculo" rows="7" placeholder="Descreva brevemente a sua experiência profissional, que te capacite para atuar como voluntário"></textarea></div>
+    
+        <div class="antepassado_criminais"><input type="file" name="antepassado_criminais" accept=".pdf" id="antepassado_criminais"></div>
+    </form>
+    </div>
+
+</body>

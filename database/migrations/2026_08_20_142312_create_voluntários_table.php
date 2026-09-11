@@ -17,7 +17,8 @@ return new class extends Migration
             $table->string('telefone');
             $table->string('linkedin');
             $table->string('email');
-            $table->string('atepassados_criminais');
+            $table->string('curriculo');
+            $table->string('antepassados_criminais');
             $table->timestamps();
             
             
