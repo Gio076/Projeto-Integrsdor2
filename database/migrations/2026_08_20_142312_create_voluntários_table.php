@@ -6,31 +6,37 @@ use Illuminate\Support\Facades\Schema;
 
 return new class extends Migration
 {
-    /**
-     * Run the migrations.
-     */
     public function up(): void
     {
-        Schema::create('voluntários', function (Blueprint $table) {
-            $table->string('nome');
+        Schema::create('voluntarios', function (Blueprint $table) {
             $table->id();
-            $table->string('telefone');
-            $table->string('linkedin');
-            $table->string('email');
-            $table->string('curriculo');
-            $table->string('antepassados_criminais');
+
+            $table->foreignId('user_id')
+                ->unique()
+                ->constrained('users')
+                ->cascadeOnDelete();
+
+            $table->string('telefone')->nullable();
+
+            $table->string('foto')->nullable();
+
+            $table->text('descricao')->nullable();
+
+            $table->text('habilidades')->nullable();
+
+            $table->text('experiencias')->nullable();
+
+            $table->text('capacitacoes')->nullable();
+
+            $table->string('status')->default('indisponivel');
+
             $table->timestamps();
-            
-            
         });
     }
 
-    /**
-     * Reverse the migrations.
-     */
     public function down(): void
     {
-        Schema::dropIfExists('voluntários');
+        Schema::dropIfExists('voluntarios');
     }
 };
   
