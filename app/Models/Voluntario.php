@@ -12,10 +12,10 @@ class Voluntario extends Model
         'user_id',
         'telefone',
         'foto',
-        'descricao',
-        'habilidades',
-        'experiencias',
-        'capacitacoes',
+        'cpf',
+        'instagram',
+        'nascimento',
+        'curriculo',
         'status',
     ];
 

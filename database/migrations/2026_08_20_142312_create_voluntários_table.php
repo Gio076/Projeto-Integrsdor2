@@ -16,19 +16,13 @@ return new class extends Migration
                 ->constrained('users')
                 ->cascadeOnDelete();
 
-            $table->string('telefone')->nullable();
-
+            $table->string('telefone');
             $table->string('foto')->nullable();
-
-            $table->text('descricao')->nullable();
-
-            $table->text('habilidades')->nullable();
-
-            $table->text('experiencias')->nullable();
-
-            $table->text('capacitacoes')->nullable();
-
-            $table->string('status')->default('indisponivel');
+            $table->string('cpf', 14)->unique();
+            $table->string('instagram')->nullable();
+            $table->date('nascimento');
+            $table->string('curriculo')->nullable();
+            $table->string('status')->default('disponivel');
 
             $table->timestamps();
         });
